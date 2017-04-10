@@ -1,0 +1,25 @@
+#include <stdio.h>
+int a[4], i=0, j=0, t;
+ 
+int main(void)
+{    
+    for(i; i<5; i++){
+    printf("Podaj liczbe: ");
+    scanf("%d", &a[i]);
+    }
+    for(i=0; i<5; i++) printf("%d\n", a[i]);
+ 
+    for(j; j<5; j++){
+    for(i=0; i<5; i++){
+             if(a[i]>a[i+1]){
+                             t=a[i];
+                             a[i]=a[i+1];
+                             a[i+1]=t;
+                             }
+                      }
+                      }
+ 
+    printf("\nPosortowane:\n");  
+    for(i=0; i<5; i++) printf("%d\n", a[i]);
+system("PAUSE");
+}
