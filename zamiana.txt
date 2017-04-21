@@ -1,3 +1,4 @@
+zMIENIAM MAINA
 ?// Sortowanie przez wymiane/wybor (selectionsort)
 // www.algorytm.org
  
