@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Quicksort</title>
+</head>
+<body>
+<!-- QUICKSORT opracowa³: Mariusz Gumienny -->
+<!-- www.algorytm.org -->
+<script>
+window.onload = function() {
+ 
+var przykladowa_tablica = [];
+ 
+// zapelnianie tablicy setk¹ losowych liczb calkowitych z przedzialu 0 - 99
+for (var m=0; m<100; m++) {
+przykladowa_tablica[m] = Math.floor(Math.random() * 100);
+}
+ 
+// wypisanie tablicy nieposortowanej
+document.write('Przed sortowaniem:<br>');
+for(var n=0, dlugosc = przykladowa_tablica.length; n<dlugosc; n++) {
+document.write(przykladowa_tablica[n] + ' ');
+}
+ 
+// algorytm
+function quicksort(d, lewy, prawy) {
+var i, j, x;
+i = j = lewy;
+ 
+while(i < prawy) {
+if (d[i] <= d[prawy]) { // pivotem jest element o indeksie [prawy]
+x = d[j];
+d[j] = d[i];
+d[i] = x;
+j++;
+}
+i++;
+}
+ 
+x = d[j];
+d[j] = d[prawy];
+d[prawy] = x;
+ 
+if(lewy < j - 1) quicksort(d, lewy, j - 1);
+if(j+1 < prawy) quicksort(d, j+1, prawy);
+} // koniec algorytmu
+ 
+// sortowanie
+quicksort(przykladowa_tablica, 0, 99);
+ 
+// wypisanie tablicy posortowanej
+document.write('<br><br>Po sortowaniu:<br>');
+for(var r=0, dlugosc = przykladowa_tablica.length; r<dlugosc; r++) {
+document.write(przykladowa_tablica[r] + ' ');
+}
+};
+</script>
+</body>
+</html>
