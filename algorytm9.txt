@@ -1,3 +1,4 @@
+TO JEST ZMIANA NUMER 6
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # www.algorytm.org
