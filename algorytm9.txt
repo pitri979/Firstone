@@ -1,0 +1,53 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+# www.algorytm.org
+ 
+import random
+ 
+ 
+def scal(t1, t2): #funkcja scalaj¹ca
+t3=[]
+i1=0 #iterator dla pierwszej tablicy
+i2=0 #iteratot dla drugiej tablicy
+for i in range(len(t1)+len(t2)):
+if t1[i1]<t2[i2]:
+t3.append(t1[i1])
+i1+=1
+else:
+t3.append(t2[i2])
+i2+=1
+if i1==len(t1) or i2==len(t2): #jeœli koniec którejœ z tablicy
+break
+if i1<i2: #jeœli i1 mniejszy, to pierwsza nie zosta³a dokoñczona
+while i1<len(t1):
+t3.append(t1[i1])
+i1+=1
+else:
+while i2<len(t2):
+t3.append(t2[i2])
+i2+=1
+return t3
+ 
+#generowanie tablic
+t1=[]
+for i in range(5):
+t1.append(random.randint(1,40))
+t1.sort() #wbudowana funkcja sortuj¹ca
+print("t1="+str(t1))
+ 
+t2=[]
+for i in range(5):
+t2.append(random.randint(1,40))
+t2.sort()
+print("t2="+str(t2))
+ 
+t3=[]
+for i in range(5):
+t3.append(random.randint(1,40))
+t3.sort()
+print("t3="+str(t3))
+ 
+tw=scal(t1,t2) #scalanie pierwszych tablic
+print("tw="+str(tw))
+tw=scal(tw,t3) #scalanie tablicy wynikowej z trzeci¹
+print("tw="+str(tw))
