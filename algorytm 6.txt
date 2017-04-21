@@ -1,0 +1,58 @@
+function x=qsort(x)                      % matlabie wystarczy
+[m,n]=size(x);                           %wpisac qsort(x) rzeby posortowac wektor
+i=1;                                     %
+od=1;                                    %
+do=n;                                    %
+while i>0;                               %Warunki...
+while do>od                          %
+[x,e,lewo,prawo]=quick(x,od,do);     %funkcja dzielaca tablice...
+i=i+1;                               %
+if lewo<=prawo                       %Standard.. jesli lewo mniejsze to
+do=e-1;                          %zakres nastepnego dzielenia jest rowny:
+a(i)=e+1;                        %do pkt podzialu minus 1.
+b(i)=e+prawo;                    %  
+else                                 %
+od=e+1;                          %w przeciwnym wypadku od pkt podzialu + 1
+a(i)=e-lewo;                     %
+b(i)=e-1;                        %a(i) oraz b(i) to wektory ktore sluza tutaj do
+end                                  %zapisywania opuszczonych czesci tablic (odrzuconych jako wieksze)
+end                                  %
+if b(i)>a(i)                             %warunek.. i w razie wyjscia z pierwszej petli
+od=a(i);                             %szukamy od konca tej tablicy ktorej niesortowalismy
+do=b(i);                             %a jest wieksza od 1 elementu.
+end                                      %
+i=i-1;                                   %W taki sposob omijam wszystkie juz wczesniej
+end                                      %wykorzystane pkt podzialu ktore sa na pewno posortowane
+end                                      %oraz wybieram stosunkowo najmniejsze tablice wracajac przez co
+%algorym powinien dzialac szybko i
+%dokladnie tak jak to wyglada na
+%symulacjach graficznych.
+% quicksort: dzielenie tablicy
+function [x,e,lewo,prawo] = quick(x,od,do)  %Funkcja pobiera zmienne:
+%od,do=jest to zakres dzialania                                             %
+k=od;                                        %przedstawiony jako indeksy
+l=do;                                        %
+pivot=x(round(od+(do-od)/2));                %pivot moze byc wlasciwie ktorymkolwiek
+while l>k                                    %elementem ja wybralem srodkowy
+while x(k)>=pivot                        %Warunki...
+if l<=k;                             %
+break                            %
+end                                  %
+if x(l)<pivot                        %zamiana przez zmienna 
+temp=x(l);                       %tymczasowa
+x(l)=x(k);                       %
+x(k)=temp;                       %
+l=l-1;                           %
+break                            %
+end                                  %
+l=l-1;                               %
+end                                      %
+k=k+1;                                   %
+end                                          %
+temp=pivot;                                  %na koncu przerzucam pivot na miejce
+pivot=x(l);                                  %gdzie algorym zakonczyl dzialanie
+x(l)=temp;                                   %czyli pkt podzialu
+e=[l];                                       %e bedzie zwracany jako indeks pkt
+lewo=e-od;                                   %podzialu
+prawo=do-e;                                  %lewo, i prawo to wielkosci
+end  
