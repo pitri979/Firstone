@@ -1,3 +1,4 @@
+TO JEST ZMIANA NUMER 8
 #include <stdio.h>
 int a[4], i=0, j=0, t;
  
