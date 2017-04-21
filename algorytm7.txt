@@ -1,3 +1,4 @@
+ZMIENIAM MAINA
 import random
  
 #quick sort - sortowanie szybkie
