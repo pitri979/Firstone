@@ -1,3 +1,4 @@
+TO JEST ZMIANA NUMER 3
 {
 int x = tablica[p]; // obieramy x
 int i = p, j = r, w; // i, j - indeksy w tabeli
