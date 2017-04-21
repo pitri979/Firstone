@@ -1,3 +1,4 @@
+TO JEST ZMIANA NUMER 10!
 ?// Sortowanie przez wymiane/wybor (selectionsort)
 // www.algorytm.org
  
