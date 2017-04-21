@@ -1,3 +1,4 @@
+TO JEST ZMIANA NUMER DWA
 using System;
  
 namespace QuickSort
