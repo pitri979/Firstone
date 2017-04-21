@@ -1,3 +1,4 @@
+TO JEST ZMIANA NUMER 7
 //Scalanie ciagow
 //(c) Dominik Goüdziuk
 //www.algorytm.org
