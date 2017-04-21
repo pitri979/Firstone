@@ -1,3 +1,4 @@
+TO JEST ZMIANA NUMER JEDEN
 function x=qsort(x)                      % matlabie wystarczy
 [m,n]=size(x);                           %wpisac qsort(x) rzeby posortowac wektor
 i=1;                                     %
