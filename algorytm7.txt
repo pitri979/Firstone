@@ -1,3 +1,4 @@
+TO JEST ZMIANA NUMER 4
 import random
  
 #quick sort - sortowanie szybkie
