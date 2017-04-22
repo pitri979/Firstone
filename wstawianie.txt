@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 zMIENIAM MAINA
+=======
+TO JEST ZMIANA NUMER 9
+>>>>>>> remotes/origin/masterjunior
 #include<stdlib.h>
 #include<iostream>
 using namespace std;

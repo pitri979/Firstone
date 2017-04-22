@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 zMIENIAM MAINA
+=======
+TO JEST ZMIANA NUMER 10!
+>>>>>>> remotes/origin/masterjunior
 ?// Sortowanie przez wymiane/wybor (selectionsort)
 // www.algorytm.org
  

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 zMIENIAM MAINA 4
+=======
+TO JEST ZMIANA NUMER JEDEN
+>>>>>>> remotes/origin/masterjunior
 function x=qsort(x)                      % matlabie wystarczy
 [m,n]=size(x);                           %wpisac qsort(x) rzeby posortowac wektor
 i=1;                                     %
