@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 zMIENIAM MAINA
+=======
+TO JEST ZMIANA NUMER DWA
+>>>>>>> remotes/origin/masterjunior
 using System;
  
 namespace QuickSort

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 zMIENIAM MAINA
+=======
+TO JEST ZMIANA NUMER 7
+>>>>>>> remotes/origin/masterjunior
 //Scalanie ciagow
 //(c) Dominik Goüdziuk
 //www.algorytm.org

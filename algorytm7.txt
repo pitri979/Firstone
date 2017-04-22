@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ZMIENIAM MAINA
+=======
+TO JEST ZMIANA NUMER 4
+>>>>>>> remotes/origin/masterjunior
 import random
  
 #quick sort - sortowanie szybkie

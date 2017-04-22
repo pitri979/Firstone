@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 
 zMIENIAM MAINA
+=======
+TO JEST ZMIANA NUMER 3
+>>>>>>> remotes/origin/masterjunior
 {
 int x = tablica[p]; // obieramy x
 int i = p, j = r, w; // i, j - indeksy w tabeli

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ZMIENIAM MAINA2
+=======
+TO JEST ZMIANA NUMER 5
+>>>>>>> remotes/origin/masterjunior
 <!DOCTYPE html>
 <html>
 <head>

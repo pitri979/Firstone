@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ZMIENIAM MAINA 3
+=======
+TO JEST ZMIANA NUMER 6
+>>>>>>> remotes/origin/masterjunior
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # www.algorytm.org

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 zMIENIAM MAINA
+=======
+TO JEST ZMIANA NUMER 8
+>>>>>>> remotes/origin/masterjunior
 #include <stdio.h>
 int a[4], i=0, j=0, t;
  
